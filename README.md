@@ -1,6 +1,8 @@
 # web2apk
 Pack h5 or web project to Android APK. This project is only a simple Android Studio project source code, zero dependency, no libs, no js-bridge, no any other tools needed.
 
+Fully cross-domain: Hook all ajax to local server(by project [ajaxhook](https://github.com/keel/ajaxhook)), so the server send the http/https requests instead of js.
+
 # Description:
 * Support fully cross-domain(by project [ajaxhook](https://github.com/keel/ajaxhook));
 * Include a standalone server(NanoHttpd-Core) inside;
