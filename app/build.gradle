@@ -16,6 +16,10 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+
+    aaptOptions {
+        noCompress ".html",".json",".js",".css",".bin",".plist","ico","lm","lmat","lh","lani","bin","meta","ls","ltc","map","atlas","plist","sk","fnt" //表示不让aapt压缩的文件后缀
+    }
 }
 
 dependencies {

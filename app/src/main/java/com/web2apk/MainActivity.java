@@ -114,6 +114,7 @@ public class MainActivity extends Activity {
                 }
                 return null;
             }
+
         });
 
         rootWebView.getSettings().setJavaScriptEnabled(true);
@@ -122,6 +123,8 @@ public class MainActivity extends Activity {
         rootWebView.getSettings().setDomStorageEnabled(true);
         rootWebView.getSettings().setDatabaseEnabled(true);
 //        rootWebView.getSettings().setAllowUniversalAccessFromFileURLs(true);
+
+        Log.e("====>","rootWebView.loadUrl:"+url);
         rootWebView.loadUrl(url);
         setContentView(rootWebView);
         hideNavKey(this);
@@ -169,8 +172,8 @@ public class MainActivity extends Activity {
                 }
             }, exitConfirmTime);
         } else {
+            LocalServer.exit();
             finish();
-            System.exit(0);
         }
     }
 

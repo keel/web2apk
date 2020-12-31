@@ -35,13 +35,7 @@ public class LocalServer extends NanoHTTPD {
         if(me != null){
             return  me;
         }
-        try{
-            me = new LocalServer(localServerPort);
-        }catch (Exception e){
-            localServerPort++;
-            Log.i("====>","set new port:[" + localServerPort+"]");
-            me = new LocalServer(localServerPort);
-        }
+        me = new LocalServer(localServerPort);
         return me;
     }
 
@@ -51,6 +45,7 @@ public class LocalServer extends NanoHTTPD {
             return;
         }
         me.stop();
+        me = null;
         Log.e("====>","LocalServer exited.");
     }
 
