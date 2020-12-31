@@ -1,5 +1,5 @@
 # web2apk
-Pack h5 or web project to Android APK fast. It's only a simple Android Studio project source code, zero dependency, no libs, no js-bridge, no any other tools.
+Pack h5 or web project to Android APK. This project is only a simple Android Studio project source code, zero dependency, no libs, no js-bridge, no any other tools needed.
 
 # Description:
 * Support fully cross-domain(by project [ajaxhook](https://github.com/keel/ajaxhook));
