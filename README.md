@@ -31,13 +31,14 @@ Custom local server port or other properties in "src/main/java/com/web2apk/MainA
 * 作者: [Keel](https://github.com/keel);
 
 ## 使用步骤
-1.如果是H5游戏项目,请打成web-mobile包;
-2.将H5项目web根目录复制到app/src/main/assets/下,替换现有的web目录;
-3.将assets下的ajax-cross.js复制到web目录,并在index.html的header中添加<script src="ajax-cross.js"></script>引用,此步骤为解决跨域问题,需要作为优先于其他js引用;
-4.修改app/src/main/res/values/strings.xml中的app_name为游戏名称;
-5.修改app/src/main/res/drawable/中的app_icon.png为实际游戏图标;
-6.修改app/build.gradle中的applicationId为实际包名,同时将app/src/main/AndroidManifest.xml中的package也改为同样的包名
-7.使用AndroidStudio打APK签名包.
+1. 将h5/h5游戏/web项目打成web-mobile包或web目录;
+2. 使用git clone或直接下载本项目;
+3. 将项目web根目录复制到app/src/main/assets/下,替换现有的web目录;
+4. 将assets下的ajax-cross.js复制到web目录,并在index.html的header中添加<script src="ajax-cross.js"></script>引用,此步骤为解决跨域问题,需要作为优先于其他js引用;
+5. 修改app/src/main/res/values/strings.xml中的app_name为游戏名称;
+6. 修改app/src/main/res/drawable/中的app_icon.png为实际游戏图标;
+7. 修改app/build.gradle中的applicationId为实际包名,同时将app/src/main/AndroidManifest.xml中的package也改为同样的包名
+8. 使用AndroidStudio导入此项目,并打出APK签名包.
 
 ## 定制化
 修改"src/main/java/com/web2apk/MainActivity"中的相关变量, 可调整内部server的端口等参数.
